@@ -93,10 +93,10 @@ class Logger:
 		end: str = "\n",
 		file: TextIO = sys.stdout,
 		flush: bool = False,
-		ll: str = "",
-		loglevel: str = None,
+		ll: LogCode | LogType | str = "",
+		loglevel: LogCode | LogType | str = None,
 	):
-		r"""The pprint function with the same signature as the inbuilt print...
+		r"""pprint function with the same signature as the inbuilt print...
 
 		method so migration is easy and use ll/loglevel. For prefab methods
 		supplied by this library, ll/loglevel can be any of:
@@ -132,10 +132,10 @@ class Logger:
 		*values: object,
 		sep: str = " ",
 		end: str = "\n",
-		ll: str = "",
-		loglevel: str = None,
+		ll: LogCode | LogType | str = "",
+		loglevel: LogCode | LogType | str = None,
 	) -> str:
-		r"""The pstr function with a similar signature as the inbuilt print...
+		r"""pstr function with a similar signature as the inbuilt print...
 
 		method so migration is easy and use ll/loglevel. For prefab methods
 		supplied by this library, ll/loglevel can be any of:
@@ -160,10 +160,8 @@ class Logger:
 		Returns:
 			str: Formatted string
 		"""
-		if loglevel is not None:
-			ll = loglevel
 		pStr = sep.join([str(value) for value in values])
-		return self._lookup(ll).format(pStr) + end
+		return self._lookup(loglevel or ll).format(pStr) + end
 
 
 metLogger = Logger(

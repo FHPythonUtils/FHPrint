@@ -68,13 +68,13 @@ def pprint(
     end: str = '\n',
     file: TextIO = sys.stdout,
     flush: bool = False,
-    ll: str = '',
-    loglevel: str = None,
+    ll: LogCode | LogType | str = '',
+    loglevel: LogCode | LogType | str = None,
     *values: object,
 ):
 ```
 
-The pprint function with the same signature as the inbuilt print...
+pprint function with the same signature as the inbuilt print...
 
 method so migration is easy and use ll/loglevel. For prefab methods
 supplied by this library, ll/loglevel can be any of:
@@ -107,13 +107,13 @@ supplied by this library, ll/loglevel can be any of:
 def pstr(
     sep: str = ' ',
     end: str = '\n',
-    ll: str = '',
-    loglevel: str = None,
+    ll: LogCode | LogType | str = '',
+    loglevel: LogCode | LogType | str = None,
     *values: object,
 ) -> str:
 ```
 
-The pstr function with a similar signature as the inbuilt print...
+pstr function with a similar signature as the inbuilt print...
 
 method so migration is easy and use ll/loglevel. For prefab methods
 supplied by this library, ll/loglevel can be any of:
