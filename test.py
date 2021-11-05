@@ -12,8 +12,18 @@ oldStdout = sys.stdout
 sys.stdout = result
 THISDIR = str(Path(__file__).resolve().parent)
 
-from fhprint import (LogCode, Logger, colorlogPrint, fhnfPrint, fhPrint,
-                     lamuPrint, metPrint, printtagsPrint, pythonPrint, xaPrint)
+from fhprint import (
+	LogCode,
+	Logger,
+	colorlogPrint,
+	fhnfPrint,
+	fhPrint,
+	lamuPrint,
+	metPrint,
+	printtagsPrint,
+	pythonPrint,
+	xaPrint,
+)
 
 print("#########################")
 print("#      Meterpreter      #")
