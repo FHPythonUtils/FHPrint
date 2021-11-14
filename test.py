@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Test fhprint
 """
+from __future__ import annotations
+
 import sys
 from io import StringIO
 from pathlib import Path
