@@ -1,0 +1,8 @@
+none
+[01m[40m[93m TITLE [00m heading
+[01m[106m[30m DEBUG [00m debug
+[01m[46m[30m INFO [00m info
+[01m[42m[30m SUCCESS [00m success
+[01m[43m[30m WARNING [00m warning
+[01m[41m[30m ERROR [00m error
+[01m[101m[30m CRITICAL [00m critical

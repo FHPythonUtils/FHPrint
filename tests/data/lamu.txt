@@ -1,0 +1,8 @@
+none
+[01m[04mheading[00m
+[96m   debug[00m  : :  debug
+[36m    info[00m  : :  info
+[32m success[00m  : :  success
+[33m warning[00m  : :  warning
+[31m   error[00m  : :  error
+[91mcritical[00m  : :  critical

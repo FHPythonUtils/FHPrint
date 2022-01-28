@@ -13,6 +13,7 @@ result = StringIO()
 oldStdout = sys.stdout
 sys.stdout = result
 THISDIR = str(Path(__file__).resolve().parent)
+sys.path.insert(0, str(Path(THISDIR).parent))
 
 from fhprint import (
 	LogCode,

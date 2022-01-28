@@ -1,0 +1,8 @@
+none
+[01m[04mheading[00m
+[36mDEBUG    [00m[34mdebug[00m
+[32mINFO     [00m[34minfo[00m
+[32mSUCCESS  [00m[34msuccess[00m
+[33mWARNING  [00m[34mwarning[00m
+[31mERROR    [00m[34merror[00m
+[31mCRITICAL [00m[34mcritical[00m

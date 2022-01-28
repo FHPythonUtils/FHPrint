@@ -1,0 +1,8 @@
+none
+[01m[04mheading[00m
+[01m[96m[$][00m debug
+[01m[36m[*][00m info
+[01m[32m[+][00m success
+[01m[33m[/][00m warning
+[01m[31m[-][00m error
+[01m[91m[!][00m critical

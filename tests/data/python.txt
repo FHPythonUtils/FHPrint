@@ -1,0 +1,8 @@
+none
+HEADER:heading
+DEBUG:debug
+INFO:info
+SUCCESS:success
+WARNING:warning
+ERROR:error
+CRITICAL:critical

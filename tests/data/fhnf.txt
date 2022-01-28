@@ -1,0 +1,8 @@
+none
+[01m[04mheading[00m
+[[01m[96m  Deb[00m] debug
+[[36m Info[00m] info
+[[32m   Ok[00m] success
+[[33m Warn[00m] warning
+[[31m  Err[00m] error
+[[01m[91m Crit[00m] critical
