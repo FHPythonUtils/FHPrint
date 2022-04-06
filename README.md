@@ -1,3 +1,85 @@
+
+========================= No Longer Supported =========================
+
+**This project has reached the end of development and is no longer
+supported**
+
+## What this means now
+
+- The repository, issues, pull requests, labels, milestones, projects, wiki,
+releases, commits, tags, branches, reactions and comments are read-only.
+- The repository can still be forked and cloned - The License still applies.
+
+## What this means in the future
+
+- The repository is scheduled for deletion (the earliest date for this is
+2022/10/01)
+- The repository may be un-archived (however, this is very unlikely)
+
+## Alternatives
+
+### https://github.com/Delgan/loguru
+
+Functions `['add', 'bind', 'catch', 'complete', 'configure', 'contextualize', 'critical', 'debug', 'disable', 'enable', 'error', 'exception', 'info', 'level', 'log', 'opt', 'parse', 'patch', 'remove', 'start', 'stop', 'success', 'trace', 'warning']`
+
+Levels: bold ❌, italic ❌, header ❌, debug ✅, info ✅, success ✅, warning ✅, error ✅, critical ✅
+
+```py
+from loguru import logger
+logger.debug("That's it, beautiful and simple logging!")
+
+# FHFormatter
+logger.add(sys.stdout, format="[<level>{level:^.4}</level>] {message}")
+
+# Python
+logger.add(sys.stdout, format="{level}:{message}")
+
+# Colorlog
+logger.add(sys.stdout, format="<level>{level:<9}</level> <blue>{message}</blue>")
+
+# Print tags
+logger.add(sys.stdout, format="<level>[{level}] {message}</level>")
+
+# Xa
+# https://loguru.readthedocs.io/en/stable/resources/recipes.html#adapting-colors-and-format-of-logged-messages-dynamically
+
+# Lamu
+logger.add(sys.stdout, format="<level>{level:>9}</level> :  : {message}")
+```
+
+### https://github.com/metachris/logzero
+
+Functions `['addFilter', 'addHandler', 'callHandlers', 'critical', 'debug', 'disabled', 'error', 'exception', 'fatal', 'filter', 'filters', 'findCaller', 'getChild', 'getEffectiveLevel', 'handle', 'handlers', 'hasHandlers', 'info', 'isEnabledFor', 'level', 'log', 'makeRecord', 'manager', 'name', 'parent', 'propagate', 'removeFilter', 'removeHandler', 'root', 'setLevel', 'warn', 'warning']`
+
+Levels: bold ❌, italic ❌, header ❌, debug ✅, info ✅, success ❌, warning ✅, error ✅, critical ✅
+
+```py
+import logzero
+from logzero import logger
+logger.debug("hello")
+
+
+# FHFormatter
+logzero.setup_default_logger(formatter=logzero.LogFormatter(fmt='%(color)s[%(levelname)4.4s]%(end_color)s %(message)s'))
+
+# Python
+logzero.setup_default_logger(formatter=logzero.LogFormatter(fmt='%(levelname)s:%(message)s'))
+
+# Colorlog
+logzero.setup_default_logger(formatter=logzero.LogFormatter(fmt='%(color)s[%(levelname)-9.9s]%(end_color)s %(message)s'))
+
+# Print tags
+logzero.setup_default_logger(formatter=logzero.LogFormatter(fmt='%(color)s[%(levelname)s] %(message)s%(end_color)s'))
+
+# Xa
+# ???
+
+# Lamu
+logzero.setup_default_logger(formatter=logzero.LogFormatter(fmt='%(color)s%(levelname)9.9s%(end_color)s :  : %(message)s'))
+```
+
+========================= No Longer Supported =========================
+
 [![GitHub top language](https://img.shields.io/github/languages/top/FHPythonUtils/fhprint.svg?style=for-the-badge)](../../)
 [![Repository size](https://img.shields.io/github/repo-size/FHPythonUtils/fhprint.svg?style=for-the-badge)](../../)
 [![Issues](https://img.shields.io/github/issues/FHPythonUtils/fhprint.svg?style=for-the-badge)](../../issues)
@@ -36,18 +118,27 @@ Output of test.py
 <img src="readme-assets/screenshots/screenshot-0.svg" alt="Screenshot 1" width="500">
 </div>
 
+- [What this means now](#what-this-means-now)
+- [What this means in the future](#what-this-means-in-the-future)
+- [Alternatives](#alternatives)
+	- [https://github.com/Delgan/loguru](#httpsgithubcomdelganloguru)
+	- [https://github.com/metachris/logzero](#httpsgithubcommetachrislogzero)
 - [Documentation](#documentation)
 - [Install With PIP](#install-with-pip)
 - [Language information](#language-information)
 	- [Built for](#built-for)
 - [Install Python on Windows](#install-python-on-windows)
 	- [Chocolatey](#chocolatey)
-	- [Download](#download)
+	- [Windows - Python.org](#windows---pythonorg)
 - [Install Python on Linux](#install-python-on-linux)
 	- [Apt](#apt)
+	- [Dnf](#dnf)
+- [Install Python on MacOS](#install-python-on-macos)
+	- [Homebrew](#homebrew)
+	- [MacOS - Python.org](#macos---pythonorg)
 - [How to run](#how-to-run)
-	- [With VSCode](#with-vscode)
-	- [From the Terminal](#from-the-terminal)
+	- [Windows](#windows)
+	- [Linux/ MacOS](#linux-macos)
 - [Download Project](#download-project)
 	- [Clone](#clone)
 		- [Using The Command Line](#using-the-command-line)
@@ -64,7 +155,20 @@ Output of test.py
 
 ## Documentation
 
-See the [Docs](/DOCS/) for more information.
+A high-level overview of how the documentation is organized organized will help you know
+where to look for certain things:
+
+<!--
+- [Tutorials](/documentation/tutorials) take you by the hand through a series of steps to get
+  started using the software. Start here if you’re new.
+-->
+- The [Technical Reference](/documentation/reference) documents APIs and other aspects of the
+  machinery. This documentation describes how to use the classes and functions at a lower level
+  and assume that you have a good high-level understanding of the software.
+<!--
+- The [Help](/documentation/help) guide provides a starting point and outlines common issues that you
+  may have.
+-->
 
 ## Install With PIP
 

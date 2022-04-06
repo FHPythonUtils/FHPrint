@@ -1,10 +1,10 @@
-# fhprint
+# Fhprint
 
-> Auto-generated documentation for [fhprint](../../fhprint/__init__.py) module.
+> Auto-generated documentation for [fhprint](../../../fhprint/__init__.py) module.
 
 Print in fancy ways.
 
-- [Fhprint](../README.md#fhprint-index) / [Modules](../README.md#fhprint-modules) / fhprint
+- [Fhprint](../README.md#fhprint-index) / [Modules](../MODULES.md#fhprint-modules) / Fhprint
     - [LogCode](#logcode)
     - [Logger](#logger)
         - [Logger().pprint](#loggerpprint)
@@ -12,7 +12,7 @@ Print in fancy ways.
 
 ## LogCode
 
-[[find in source code]](../../fhprint/__init__.py#L10)
+[[find in source code]](../../../fhprint/__init__.py#L10)
 
 ```python
 class LogCode(str, Enum):
@@ -32,11 +32,11 @@ CRITICAL = "crit"
 
 ## Logger
 
-[[find in source code]](../../fhprint/__init__.py#L38)
+[[find in source code]](../../../fhprint/__init__.py#L38)
 
 ```python
 class Logger():
-    def __init__(mapping: dict[(str, str)] = None) -> None:
+    def __init__(mapping: dict[str, str] = None) -> None:
 ```
 
 Logger class. Can be used to make a custom logger.
@@ -60,7 +60,7 @@ to add a cat emoji before a message (if so inclined)
 
 ### Logger().pprint
 
-[[find in source code]](../../fhprint/__init__.py#L89)
+[[find in source code]](../../../fhprint/__init__.py#L89)
 
 ```python
 def pprint(
@@ -101,7 +101,7 @@ supplied by this library, ll/loglevel can be any of:
 
 ### Logger().pstr
 
-[[find in source code]](../../fhprint/__init__.py#L130)
+[[find in source code]](../../../fhprint/__init__.py#L130)
 
 ```python
 def pstr(
